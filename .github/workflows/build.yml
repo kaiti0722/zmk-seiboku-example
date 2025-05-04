@@ -1,5 +1,6 @@
-on: [push]
-
+on:
+  push:
+  workflow_dispatch:  # 手動実行を可能にする
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
